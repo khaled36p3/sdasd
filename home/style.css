@@ -1,0 +1,299 @@
+/* body things */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: rgb(0, 211, 255);
+    background: linear-gradient(90deg, rgba(0, 211, 255, 1) 0%, rgba(0, 255, 239, 1) 46%, rgba(0, 255, 188, 1) 100%);
+}
+
+
+/* styling and placing pc nav bar elments */
+nav {
+    width: 100%;
+    height: 50px;
+
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    font-size: 30px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.ele {
+    color: white;
+    padding: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: 0.5s;
+
+}
+
+.ele:hover {
+
+    font-size: 40px;
+    transition: 0.5s;
+    border-bottom: solid aqua;
+}
+
+.pc-buttom-part {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+
+}
+
+#learnandplay {
+    width: 40%;
+    height: 45%;
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    border: solid;
+    border-radius: 15px;
+}
+
+/* the element inside the buttom part of the pc*/
+.first {
+    height: 30%;
+    width: 15%;
+    background: white;
+    border: solid;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.first img {
+    height: 55%;
+    width: 25%;
+    padding-right: 15px;
+}
+
+.first h1 {
+    padding-left: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.second {
+    height: 30%;
+    width: 15%;
+    background: white;
+    border: solid;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.second img {
+    height: 55%;
+    width: 25%;
+    padding-right: 25px;
+    margin-left: 15px;
+}
+
+.second h1 {
+    padding-left: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.third {
+    height: 30%;
+    width: 15%;
+    background: white;
+    border: solid;
+    border-radius: 15px;
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+}
+
+.third img {
+    height: 55%;
+    width: 25%;
+
+    margin-left: 15px;
+}
+
+.third h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.forth {
+    height: 30%;
+    width: 15%;
+    background: white;
+    border: solid;
+    border-radius: 15px;
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+}
+
+.forth img {
+    height: 55%;
+    width: 25%;
+
+    margin-left: 15px;
+}
+
+.forth h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+/* styling the buttom of the bottom part */
+.buttom2{
+    height: 50%;
+    width: 90%;
+    background: white;
+    border: solid;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.buttom2 img{
+    height: 50%;
+}
+.buttom2 h1{
+    font-size: 700%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+}
+#bb{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 10%;
+    width: 15%;
+    border: solid;
+    border-radius: 15px;
+    top: 30%;
+    background: #72efff;
+    transition: 0..6s;
+}
+#bb:hover{
+    background: rgb(0, 204, 255);
+    transition: 0.6s;
+}
+/* dont show mobile elemets in pc */
+.mobelnav {
+    display: none;
+}
+
+.mobelnav {
+    display: none;
+}
+.mobileelements{
+    display: none;
+}
+/* ading responsive */
+@media screen and (max-width:1000px) {
+    .pcnav {
+        display: none;
+
+    }
+
+    .mobelnav {
+        display: flex;
+
+
+    }
+
+    .pcelements {
+        display: none;
+    }
+
+    .mobelnav {
+        position: absolute;
+        bottom: 2%;
+        background: white;
+        border-radius: 50px;
+        height: 50px;
+        display: flex;
+        left: 2.5%;
+        width: 95%;
+        justify-content: space-around;
+        position: fixed;
+    }
+
+    .mobelnav img {
+
+
+        padding-left: 2%;
+        padding-right: 2%;
+
+    }
+
+    body {
+        background: rgb(0, 255, 248);
+        background: linear-gradient(90deg, rgba(0, 255, 248, 1) 0%, rgba(0, 250, 188, 1) 100%);
+    }
+    .mobileelements{
+        display: flex;
+    }
+    #learnandplayy{
+        height: 25%;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        border: solid;
+        border-radius: 15px;
+        top: 5%;
+    }
+
+    .im{
+        width: 12%;
+        
+    }
+    .mobileelements{
+        background: white;
+        border: solid;
+        height: 25%;
+        width: 90%;
+        border-radius: 15px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    .imgs{
+        height: 25%;
+        width: 25%;
+        display: flex;
+
+
+    }
+.divs{
+    border: solid;
+    border-radius: 15px;
+    display: flex;
+}
+}
